@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  header, main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-bottom: 2em;
+      margin-top: 5em;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    text-align: center;
+}
+  
+  header p {
+    font-size: 1em;
+    margin-bottom: 5em;
+    text-align: center;
+  }
+  
+  main section {
+    margin-bottom: 1em;
+  }
+  
+  main section h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  main section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main section li {
+    margin-bottom: 1em;
+  }
+  
+  main section li a {
+    display: block;
+  }
+  
+  main section li a img {
+    width: 100%;
+  }
+  
+  main section li a h3 {
+    margin-top: 0.5em;
+  }
+  
+  main section li a p {
+    margin-top: 0.5em;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  
+img:hover {
+    opacity: 0.7;
+    position: relative;
+    transform: scale(1.02);
+    transition: 0.7s;
+  }
+
+
+  .image-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    max-height: 10000px;
+    padding: 10px;
+
+  }
+  
+  .image-column{
+    width: 33%;
+    padding: 20px 10px 0;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 5%;
+    background-color: rgba(128, 128, 128, 0.45); 
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    text-align: center;
+
+  }
+  
+  .menu a {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-top: 12.5px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .menu a:hover {
+    opacity: 50%;
+    position: relative;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.textField{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0);
+
+  transition-duration: 0.2%;
+}
+
+.textField.on{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgba(0 0 0 0.5);
+}
+
+.imgTag{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail{
+  position: relative;
+  background-color: white;
+  display: inline-block;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: grey;
+  opacity: 50%;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
